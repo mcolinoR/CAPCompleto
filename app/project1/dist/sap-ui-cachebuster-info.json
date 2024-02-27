@@ -1,0 +1,19 @@
+{
+  "Component-preload.js": 1709043245065,
+  "controller/App.controller.js": 1708941307698,
+  "model/models.js": 1708941307694,
+  "libs/call.js": 1708959493912,
+  "controller/View1.controller.js": 1709028326288,
+  "manifest.json": 1709043244667,
+  "Component.js": 1708941307682,
+  "i18n/i18n.properties": 1709042882148,
+  "controller/App-dbg.controller.js": 1708941307698,
+  "libs/call-dbg.js": 1708959493912,
+  "controller/View1-dbg.controller.js": 1709028326288,
+  "model/models-dbg.js": 1708941307694,
+  "Component-dbg.js": 1708941307682,
+  "view/View1.view.xml": 1709035831277,
+  "view/App.view.xml": 1708941307698,
+  "css/style.css": 1708941307698,
+  "index.html": 1708941307682
+}

@@ -1,0 +1,156 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Title text="Restaurantes" level="H1" titleStyle="H3"/>
+         <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Restaurant ID"/>
+            <SearchField xmlns="sap.m" id="id1" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Name"/>
+            <SearchField xmlns="sap.m" id="id2" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Type"/>
+            <SearchField xmlns="sap.m" id="id3" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Opening Hour"/>
+            <TimePicker xmlns="sap.m" id="id4" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Closing Hour"/>
+            <TimePicker xmlns="sap.m" id="id5" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="City"/>
+            <SearchField xmlns="sap.m" id="id6" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+
+    
+
+         <Button text="Crear Restaurante" press="onCreateRestaurant"/>
+         <Button text="Filtrado restaurante por ciudad" press="getRestaurantFilterByCity"/>
+         <Button text="Ver opiniones" press="getOpinions"/>
+         <Button text="Ver datos northwind" press="getCustomersNorthwind"/>
+         <Button text="Ver datos API" press="getApi"/>
+         
+
+
+        <Bar>
+            <contentLeft>
+                <Label text="Elegir Restaurante"/>
+                <ComboBox id="selectRestaurant" selectionChange="getKey" showSecondaryValues= "true">
+                </ComboBox>
+            </contentLeft>
+        </Bar>
+
+
+        <Table items="{modelTable>/results}">
+            <columns>
+                <Column>
+                    <Label text="ID"/>
+                </Column>
+                <Column>
+                    <Label text="Nombre"/>
+                </Column>
+                <Column>
+                    <Label text="Tipo"/>
+                </Column>
+                 <Column>
+                    <Label text="Hora apertura"/>
+                </Column>
+                  <Column>
+                    <Label text="Hora cierre"/>
+                </Column>
+                  <Column>
+                    <Label text="Ciudad"/>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{modelTable>idEX}"/>
+                        <Text text="{modelTable>nameEX}"/>
+                        <Text text="{modelTable>typeEX}"/>
+                        <Text text="{modelTable>openHourEX}"/>
+                        <Text text="{modelTable>closeHourEX}"/>
+                        <Text text="{modelTable>cityEX}"/>
+                      
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        
+
+        <Title text="Menus" level="H1" titleStyle="H3"/>
+
+         <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Nombre "/>
+            <SearchField xmlns="sap.m" id="id7" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Precio (decimal)"/>
+            <SearchField xmlns="sap.m" id="id8" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Descripcion"/>
+            <SearchField xmlns="sap.m" id="id9" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Grado picante (1 al 10)"/>
+            <SearchField xmlns="sap.m" id="id10" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+        <HBox alignContent="Center" alignItems="Center" justifyContent="SpaceBetween" class="searchField">
+            <Label text="Disponible (true / false)"/>
+            <SearchField xmlns="sap.m" id="id11" class="searchField2" liveChange="onSearch"/>
+        </HBox>
+
+
+         <Button text="Crear Menu" press="onCreateMenu"/>
+         <Button text="Ver menus" press="getMenus"/>
+
+
+
+        <Table items="{modelTable2>/results2}">
+            <columns>
+                <Column>
+                    <Label text="Nombre"/>
+                </Column>
+                <Column>
+                    <Label text="Precio"/>
+                </Column>
+                <Column>
+                    <Label text="Descripcion"/>
+                </Column>
+                 <Column>
+                    <Label text="Grado picante"/>
+                </Column>
+                  <Column>
+                    <Label text="Disponible"/>
+                </Column>
+               
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{modelTable2>nameeEX}"/>
+                        <Text text="{modelTable2>priceeEX}"/>
+                        <Text text="{modelTable2>descriptionnEX}"/>
+                        <Text text="{modelTable2>spiceEX}"/>
+                        <Text text="{modelTable2>availableEX}"/>
+                      
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+       
+        <content />
+    </Page>
+</mvc:View>
+
+
+
