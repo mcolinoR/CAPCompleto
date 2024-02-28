@@ -133,7 +133,7 @@ sap.ui.define([
                 data_created.cityEX = data.createRestaurant.restaurant.City,          
 
         
-                this.getView().getModel("modelTable").setProperty("/results2", [data_created]);
+                this.getView().getModel("modelTable").setProperty("/results", [data_created]);
             }.bind(this);
         
             var fnError = function (err) {
