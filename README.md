@@ -1,11 +1,11 @@
 comandos:
-npm install
-cds build
-cds watch --profile hybrid 
-cds bind -2 nombreContenedor:SharedDevKey
-cds bind -2 nombreServicio:claveServicio
+- npm install
+- cds build
+- cds watch --profile hybrid 
+- cds bind -2 nombreContenedor:SharedDevKey
+- cds bind -2 nombreServicio:claveServicio
 
-
+importante:
 - Desplegar a Hana: con el cohete que aparece en la parte de hana
 - Para crear app router: click derecho en mta.yaml --> create module from template. Esto añade cosas nuevas en el package json
 - Para desplegar el proyecto: click derecho en mta.yaml --> build mta proyect y despliegas luego el .mtar generado 
