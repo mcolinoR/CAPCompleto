@@ -7,7 +7,7 @@ comandos:
 
 importante:
 - Desplegar a Hana: con el cohete que aparece en la parte de SAP HANA PROJECTS 
-- Para crear AppRouter: click derecho en mta.yaml --> create module from template. Esto añade cosas nuevas en el package json
+- Para crear AppRouter: click derecho en mta.yaml --> create module from template. El managed AppRouter añade cosas nuevas en el package json
 - Para desplegar el proyecto: click derecho en mta.yaml --> build mta proyect y despliegas luego el .mtar generado 
 
 
