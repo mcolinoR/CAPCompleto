@@ -1,7 +1,7 @@
 comandos:
 - npm install
 - cds build
-- cds watch --profile hybrid 
+- cds watch --profile hybrid --> para ejecutar en local 
 - cds bind -2 nombreContenedor:SharedDevKey
 - cds bind -2 nombreServicio:claveServicio
 
